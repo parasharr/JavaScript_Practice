@@ -47,3 +47,35 @@ let someNumber = 33
 let StringNumber = String(someNumber)
 console.log(StringNumber)
 console.log(typeof StringNumber)
+
+// summary
+// Primitive
+// 7 types : String, number, boolean, null, undefined, symbol, BigInt
+const score = 1000;
+const scoreValue = 100.4;
+const isLoggedIn = false;
+const temp = null; //object
+let userEmail; 
+
+const id = Symbol('43424'); //symbol
+const anotherId = Symbol('43424');
+
+console.log(id === anotherId); //false
+
+const bigNumber = 1212643415122324423231n; //undefined
+
+// Refrence type(Non Primitive)
+// Array, objects, functions
+
+const heros = ["ironman", "thor", "hulk"] //array
+
+const person = {
+    name: "Pranjeet",
+    age : 19
+} // objects
+
+const myFunc = function(){
+    console.log("hello world");
+} //functions
+
+// all non primitives return their datatypes as function object
