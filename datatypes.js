@@ -79,3 +79,5 @@ const myFunc = function(){
 } //functions
 
 // all non primitives return their datatypes as function object
+
+console.log(typeof Nan)
