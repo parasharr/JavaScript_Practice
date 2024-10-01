@@ -37,11 +37,11 @@
 // const loggedInFromGoogle = false
 // const loggedInFromEmail = true
 
-// if(userLoggedIn && debitCard){
+// if(userLoggedIn && debitCard){  //and
 //     console.log("allow to buy");
 // }
 
-// if(loggedInFromGoogle || loggedInFromEmail){
+// if(loggedInFromGoogle || loggedInFromEmail){ //or
 //     console.log("logged in");   
 // }
 
@@ -95,3 +95,24 @@ const emptyObj = {}
 if(Object.keys(emptyObj).length === 0){
     console.log("empty");
 }
+
+false == 0 //true
+false == '' //true
+0 == '' //true
+
+//Nullish Coalescing Operator(??): Null undefined
+
+let val1;
+// val1 = 5 ?? 10;
+// val1 = null ?? 10;
+// val1 = undefined ?? 15;
+val1 = null ?? 10 ?? 15;
+
+console.log(val1)
+
+//terniary operator
+
+const iceTeaPrice = 100;
+let ice = iceTeaPrice > 80 ? "less than 80" : "more than 80";
+
+console.log(ice);
