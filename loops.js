@@ -71,5 +71,168 @@ do {
 const myArr = [1,2,3,4,5]
 
 for (const value of myArr) {
-    console.log(value);
+    // console.log(value);
 }
+
+const greeting = "Hello"
+
+for (const greet of greeting) {
+    // console.log(`Each char is ${greet}`);
+}
+
+//Map
+
+const map = new Map()
+map.set('IND', "India")
+map.set('USA', "United States Of America")
+map.set('Fr', "Franch")
+
+for (const [key, value] of map) {
+    // console.log(key, ':->', value);
+}
+
+// console.log(map);
+
+//For of in object
+const myGames = {
+    'game1': 'NFS',
+    'game2': 'Spiderman',
+    'game3': 'Call of duty'
+}
+
+// for (const element of object) {
+//     //for of will not work in object
+// }
+
+//for in
+const myObj = {
+    js: 'Javascript',
+    cpp: 'C++',
+    rb: 'ruby',
+    swift: "swift by apple"
+}
+
+for (const key in myObj) {
+    // console.log(`${key} shortcut is for ${myObj[key]}`);
+    
+}
+
+const programming = ["js","rb","py","java","cpp"]
+
+for (const key in programming) {
+    // console.log(programming[key]);
+}
+
+//for each
+const coding = ["js","ruby","java","python","javascript"]
+
+coding.forEach( function(item){
+    // console.log(item);
+    
+})
+
+const myCoding = [
+    {
+        langName: "Javascript",
+        fileExtension: ".js"
+    },
+    {
+        langName: "Pythont",
+        fileExtension: ".py"
+    },
+    {
+        langName: "C++",
+        fileExtension: ".cpp"
+    }
+]
+
+myCoding.forEach(function(item){
+    // console.log(item.langName);
+})
+
+//filter
+
+const myNums = [1,2,3,4,5,6,7,8,9,10]
+const newNums = myNums.filter((num)=> num > 5 )
+// console.log(newNums);
+
+// const books = [
+//     {title: 'Book one', genre: 'History', publish: 1986, edition: 2001},
+//     {title: 'Book two', genre: 'Mystry', publish: 1986, edition: 2003},
+//     {title: 'Book three', genre: 'Fiction', publish: 1986, edition: 1999},
+//     {title: 'Book four', genre: 'Non-Fiction', publish: 1986, edition: 1999},
+//     {title: 'Book five', genre: 'Science', publish: 1986, edition: 1999},
+//     {title: 'Book six', genre: 'History', publish: 1986, edition: 1999},
+//     {title: 'Book seven', genre: 'Petriotism', publish: 1986, edition: 1999},
+//     {title: 'Book eight', genre: 'History', publish: 1986, edition: 1999},
+//     {title: 'Book 9', genre: 'Novel', publish: 1986, edition: 1999},
+//     {title: 'Book 10', genre: 'Fiction', publish: 1986, edition: 1999},
+//     {title: 'Book 11', genre: 'Scrience', publish: 1986, edition: 1999},
+//     {title: 'Book 12', genre: 'Mystry', publish: 1986, edition: 1999},
+//     {title: 'Book 13', genre: 'Novel', publish: 1986, edition: 1999},
+//     {title: 'Book 14', genre: 'History', publish: 1986, edition: 1999},
+//     {title: 'Book 15', genre: 'Novel', publish: 1986, edition: 1999},
+//     {title: 'Book 16', genre: 'Diary', publish: 1986, edition: 1999},
+//     {title: 'Book 17', genre: 'Biography', publish: 1986, edition: 1999},
+//     {title: 'Book 18', genre: 'Sports', publish: 1986, edition: 1999},
+//     {title: 'Book 19', genre: 'History', publish: 1986, edition: 1999},
+//     {title: 'Book 20', genre: 'Love', publish: 1986, edition: 1999}
+// ]
+// let userBooks = books.filter((bk)=> bk.genre = 'History')
+// const userBooks2 = books.filter((bk)=>{
+//     return bk.publish >= 1995 && bk.genre === 'History';
+// })
+
+// console.log(userBooks)
+
+// console.log(userBooks2)
+
+//Map
+
+const myNumbers = [1,2,3,4,5,7,8,10]
+
+// const newNumbers = myNumbers.map((item)=> item + 10)
+
+const newNumbers = myNumbers
+                    .map((num)=> num * 10)
+                    .map((num)=> num + 5)
+                    .filter((num)=> num >= 40)
+// console.log(newNumbers);
+
+
+
+//reduce
+const numbers = [1,2,3,4,5]
+
+// const myTotal = numbers.reduce(function(acc, currval){
+//     console.log(`acc:${acc} and currval:${currval}`);
+//     return acc + currval;
+// }, 0)
+
+const myTotal = numbers.reduce((acc, currval)=> acc+currval, 0)
+
+console.log(myTotal);
+
+
+const shoppingCart = [
+    {
+        itemName: "T-shirt",
+        price: 2999
+    },
+    {
+        itemName: "Shirt",
+        price: 4999
+    },
+    {
+        itemName: "Jeans",
+        price: 2599
+    },
+    {
+        itemName: "Bag",
+        price: 1599
+    },
+]
+
+const PriceToPay = shoppingCart.reduce((acc , item)=> acc + item.price ,0)
+console.log(PriceToPay);
+
