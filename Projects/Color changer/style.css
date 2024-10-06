@@ -2,9 +2,7 @@
     padding: 0;
     margin: 0;
 }
-body{
-    background-color: #fff;
-}
+
 nav {
     text-align: center;
     background-color: whitesmoke;
@@ -50,3 +48,39 @@ main h1{
     background-color: #d4d1d1;
 }
 
+/* project1 */
+.canvas h1{
+    text-align: center;
+    padding: 5%;
+}
+.canvas h2{
+    text-align: center;
+}
+
+  .canvas {
+    margin: 100px auto 100px;
+    width: 80%;
+    text-align: center;
+  }
+  
+  .button {
+    width: 100px;
+    height: 100px;
+    border: solid black 2px;
+    display: inline-block;
+  }
+  
+  #grey {
+    background: grey;
+  }
+  
+  #white {
+    background: white;
+  }
+  #blue {
+    background: blue;
+  }
+  #yellow {
+    background: yellow;
+  }
+  
