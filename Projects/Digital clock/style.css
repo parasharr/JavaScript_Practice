@@ -1,0 +1,48 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+nav {
+  text-align: center;
+  background-color: whitesmoke;
+  padding: 15px;
+  border: 1px solid #222;
+}
+nav a button{
+  width: 20%;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+nav a button:hover{
+  background-color: #d4d1d1;
+}
+nav button{
+  margin: 10px;
+}
+
+body {
+    background-color: #212121;
+    color: #fff;
+  }
+  .center {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .center #banner span{
+    font-size: 20px;
+    font-weight: 800;
+  }
+  #clock {
+    font-size: 40px;
+    background-color: transparent;
+    padding: 20px 50px;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: 1px solid #fff;
+  }
