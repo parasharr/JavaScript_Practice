@@ -28,6 +28,9 @@ const img = document.querySelector('#images')
 
 img.addEventListener('click', function(e){
     console.log(e.target.parentNode);
-    let removeIt = e.target.parentNode;
-    removeIt.remove();
+    if (e.target.tagName ==='IMG') {
+        let removeIt = e.target.parentNode;
+        removeIt.remove();
+    }
+    
 })
