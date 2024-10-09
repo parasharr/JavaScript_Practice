@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+body{
+    background-color: lightseagreen;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#container{
+    height: 500px;
+    width: 350px;
+    background-color: #222;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+}
+#container img{
+    height: 90%;
+    width: 100%;
+    object-fit: cover;
+    padding-top: 5px;
+}
+#container h4{
+    color: #fff;
+    font-size: 13px;
+    padding-top: 5px;
+    padding-left: 5px;
+}
+#container #heart{
+    color: #fff;
+    font-size: 60px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 0;
+    transition: all ease 0.2s;
+}
+
+#icons i{
+    color: #fff;
+    font-size: 20px;
+    padding-left: 10px;
+}
