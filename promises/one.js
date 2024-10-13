@@ -118,6 +118,13 @@ fetch('https://jsonplaceholder.typicode.com/users')
     console.log('Done');
 })
 .finally(function(){
-    console.log(`run or not`);
-    
+    console.log(`run or not`); 
 })
+
+/*
+a fetch() promise only rejects when a network error is encountered 
+(which is usually when there's a permission issue or similar). 
+a fetch() promise does not reject HTTP errors (404, etc.) 
+instead, a then() handler must check the response.ok and/or response.status properties.
+*/
+
