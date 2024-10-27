@@ -23,3 +23,16 @@
     margin: 10px;
   }
   
+  h1{
+    text-align: center;
+  }
+
+  button{
+    width: 20%;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  #start{
+    margin-left: 30%;
+  }
